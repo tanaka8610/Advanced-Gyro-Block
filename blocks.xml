@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups ModuleName="Advanced Gyro Block" ModuleVersion="0.8 β">
+	<PolyGroup Name="Advanced Gyro Calculater" BlockFamily="DataOperations">
+      <Parameter Name="angle" Identification="OFDL_Kp.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="angle2" Identification="OFDL_Ki.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="Input" Identification="builtin://Identification_Numeric.png" DataType="Single" Direction="Input" DefaultValue="0" />
+      <Parameter Name="Output" Identification="builtin://Identification_Numeric.png" DataType="Single" Direction="Output" />
+      <Block>
+        <Mode>config</Mode>
+        <Reference Type="VILib" Name="THKS_PID_calculater_conf.vix" />
+        <ParameterReference Name="angle" />
+        <ParameterReference Name="angle2" />
+      </Block>
+      <Block>
+        <Mode>main</Mode>
+        <Reference Type="VILib" Name="THKS_PID_calculater_main.vix" />
+        <ParameterReference Name="Input" />
+        <ParameterReference Name="Output" />
+        <PaletteInfo Weight="0.5" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
