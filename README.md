@@ -4,7 +4,7 @@ ev3のジャイロセンサーにはセンサー値が永続的に増減する�
 これらのバグはセンサーに接続されているケーブルを再接続することで解決しますが、競技中にそれらを行うことは不可能です。
 プログラム上からハードウェアリセットを可能にするサードパーティー製ブロックはありますが、それらのブロックは競技中に実行するには時間がかかります。
 そこで、センサー値の増減のバグが発生していながらもジャイロセンサーを使えるようにする計算ブロックを製作しました。
-ev3bファイルのダウンロードはここから：[Latest release](https://github.com/tanaka8610/Advanced-Gyro-Block/releases)
+このブロックをインポートするにはev3bファイルをダウンロードしてください：[Latest release](https://github.com/tanaka8610/Advanced-Gyro-Block/releases)
 
 
 The gyro sensor in ev3 has bugs that cause the sensor value to increase or decrease permanently.
